@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            li+li{
+                background-color: aqua;
+            }
+            a:link{color: red;}
+            a:visited{color: yellow;}
+            a:hover{color: blue;}
+            a:active{color:blueviolet}
+            a:first-child{color: chartreuse;}
+            ul::before{
+                content:"ul元素前出现的文字";
+                color: #00ddcc;
+            }
+            ul::selection{color: red;}
+
+            body{
+                background-image: url(../1/1.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="demo">
+            <li>HTML:<a href="http://www.w3school.com.cn/html/index.asp">html学习网</a></li>
+            <ul>
+                <li>CSS:<a href="">css学习网</a></li>
+                <li>vue:<a href="">vue学习网</a></li>
+
+            </ul>
+            <li>javascript:<a href="http://www.w3school.com.cn/js/index.asp">js学习网</a></li>
+        </ul>
+    </body>
+</html>
